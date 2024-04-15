@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "url-shortener-api"
+version = "0.1.0"
+description = "Based on the exchange, the task involves creating a URL shortening service with specified functional features and operational considerations. The service will need to accept a long URL as input, generate a unique, concise alias that is both easy to remember and includes a mix of letters and numbers, and store this alias alongside the original URL. Given the user's preferences, the alias format should aim for readability and uniqueness, incorporating strategies discussed such as appending numerical identifiers, using slugs derived from the original URL, or including timestamps for guaranteed uniqueness."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pydantic = "*"
+fastapi = "^0.68.0"
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+prisma = "*"
+python-jose = {version = "^3.3.0", extras = ["cryptography"]}
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
